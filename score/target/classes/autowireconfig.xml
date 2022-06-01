@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns:context="http://www.springframework.org/schema/context" 
+         xmlns:aop="http://www.springframework.org/schema/aop" 
+         xsi:schemaLocation="
+         http://www.springframework.org/schema/beans 
+         classpath:/org/springframework/beans/factory/xml/spring-beans.xsd 
+         http://www.springframework.org/schema/context 
+         classpath:/org/springframework/context/config/spring-context.xsd
+         http://www.springframework.org/schema/aop 
+         classpath:/org/springframework/aop/config/spring-aop.xsd
+         ">  
+	   <!-- this is our beans-->
+	   <!-- p schema method not working -->
+	   <context:annotation-config/>
+	   <bean class="com.springcore.auto.wire.Address" name="address">
+	      <property name="line" value="Saurabh Manzil"/>
+       </bean>	  
+       <bean class="com.springcore.auto.wire.Emp" name="employee" />	   
+</beans>

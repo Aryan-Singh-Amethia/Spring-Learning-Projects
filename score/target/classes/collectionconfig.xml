@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org.org/schema/context"
+	   xmlns:p="http://springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org.schema/context
+	   http://www.springframework.org/schema/context/spring-context.xsd">
+	   <!-- this is our beans-->
+	   <!-- p schema method not working -->
+	   <bean class="com.springcore.collections.Emp" name="emp1" >
+	       <property name="empName" value="Aarko"/>
+	       <property name="props">
+		      <props>
+			     <prop key="mobileNo">7667038526</prop>
+				 <prop key="lastName">Dutta</prop>
+			  </props>
+	       </property>
+	   </bean>
+</beans>

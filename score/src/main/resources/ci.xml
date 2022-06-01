@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org.org/schema/context"
+	   xmlns:p="http://springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org.schema/context
+	   http://www.springframework.org/schema/context/spring-context.xsd">
+	   <!-- this is our beans-->
+	   <!-- p schema method not working -->
+	   <bean class="com.springcore.ci.Student" name="stud1" >
+          <constructor-arg value="109"/>
+		  <constructor-arg value="Aryan Singh Amethia"/>
+		  <constructor-arg value="Ranchi, Jharkhand"/> 
+          <constructor-arg>
+		     <list>
+			    <value>Cycling</value>
+				<value>Badminton</value>
+			 </list>
+		  </constructor-arg>
+	   </bean>
+</beans>
